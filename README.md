@@ -43,9 +43,9 @@ table2 AS (
    FROM table1
    GROUP BY day
 	 )
-    
 SELECT
 	day,
   avg_customers AS avg_region_customers
 FROM table2
 WHERE avg_customers = (SELECT MIN(avg_customers) FROM table2);
+```
