@@ -1,7 +1,8 @@
 # SQL Common Table Expressions
 ## SQL CTE and nested CTE
 ```sql
--- This query wants the avg of the total donations made to a project if the sum was > than minimal amount and it had >10 donations
+-- This query wants the avg of the total donations made to a project 
+-- if the sum was > than minimal amount and it had >10 donations
 WITH ct1 AS (
   SELECT
     project_id,
